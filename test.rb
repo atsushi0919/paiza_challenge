@@ -52,6 +52,25 @@ end
 # 同じ処理
 # lines = file.read.split("\n")
 
+multi = 8
+result = []
+12.times do
+  # 測定開始
+  start = Time.now
+  total = 0
+  1..10 ** multi.times do
+    (1..10 ** multi).each { |num| total += num }
+  end
+  # 測定終了
+  result << Time.now - start
+  #puts "#{Time.now - start} s\n"
+  puts total
+end
+puts "10^#{multi}"
+puts result.sort
+
+exit
+
 # ランダムシード
 srand(0)
 log_counts = [100000, 500000, 1000000, 5000000, 10000000]
@@ -62,12 +81,11 @@ log_counts.each do |log_count|
   # 測定開始
   start = Time.now
 
-  #log_count = 5
-  #campaign_days = 3
-  #visitor_counts = [1, 2, 3, 2, 1]
+  #puts "n = #{log_count}, k = #{campaign_days}"
+  #puts solve2(log_count, campaign_days, visitor_counts).join(" ")
 
-  puts "n = #{log_count}, k = #{campaign_days}"
-  puts solve2(log_count, campaign_days, visitor_counts).join(" ")
+  num = 1
+  10 ** 3.times { num += 1 }
 
   # 測定
   puts "#{Time.now - start} s\n"
