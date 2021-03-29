@@ -44,49 +44,21 @@ def solve2(log_count, campaign_days, visitor_counts)
 end
 
 # タイムオーバーした問題を読み込む(ログ: n=300,000, キャンペーン: k=150,000)
-#FILE_NAME = "failed_case.txt"
-#file = File.open(FILE_NAME)
+FILE_NAME = "failed_case.txt"
+file = File.open(FILE_NAME)
 
 # ファイルを全て読み込み、改行を取り除いて行ごとの配列を作成する
-#input_lines = file.readlines(chomp: true)
-# 同じ処理
-# lines = file.read.split("\n")
+input_lines = file.readlines(chomp: true)
 
-multi = 8
-result = []
-12.times do
-  # 測定開始
-  start = Time.now
-  total = 0
-  1..10 ** multi.times do
-    (1..10 ** multi).each { |num| total += num }
-  end
-  # 測定終了
-  result << Time.now - start
-  #puts "#{Time.now - start} s\n"
-  puts total
-end
-puts "10^#{multi}"
-puts result.sort
+n, k = input_lines.shift.split.map(&:to_i)
+v = input_lines.shift.split.map(&:to_i)
 
-exit
+start = Time.now
+puts "実装1"
+puts solve1(n, k, v)
+puts "#{Time.now - start}"
 
-# ランダムシード
-srand(0)
-log_counts = [100000, 500000, 1000000, 5000000, 10000000]
-
-log_counts.each do |log_count|
-  campaign_days = log_count / 2
-  visitor_counts = Array.new(log_count) { rand(101) }
-  # 測定開始
-  start = Time.now
-
-  #puts "n = #{log_count}, k = #{campaign_days}"
-  #puts solve2(log_count, campaign_days, visitor_counts).join(" ")
-
-  num = 1
-  10 ** 3.times { num += 1 }
-
-  # 測定
-  puts "#{Time.now - start} s\n"
-end
+start = Time.now
+puts "\n実装2"
+puts solve2(n, k, v)
+puts "#{Time.now - start}"
