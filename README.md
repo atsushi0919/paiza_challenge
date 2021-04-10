@@ -8,8 +8,8 @@ IT／WEBエンジニアに特化した転職・就職・学習サイト[「paiza
 現時点では各ファイルを直接閲覧して頂く形になっています。  
 もう少し資料が増えたら何か考えたいと思っています・・・
 
-- ### [paiza練習問題提出までの流れ (3/24 発表内容)](https://github.com/atsushi0919/paiza_challenge/blob/main/paiza_max_range.ipynb)
-- ### [paizaA級問題で学ぶ 計算量とアルゴリズム (4/11 発表内容)](https://github.com/atsushi0919/paiza_challenge/blob/main/paiza_max_range.ipynb)
+- ### [paiza練習問題提出までの流れ (2021/3/24 発表内容)](https://github.com/atsushi0919/paiza_challenge/blob/main/paiza_max_range.ipynb)
+- ### [paizaA級問題で学ぶ 計算量とアルゴリズム (2021/4/11 発表内容)](https://github.com/atsushi0919/paiza_challenge/blob/main/paiza_max_range.ipynb)
 
 - ### [getsメソッドを使った色々な標準入力の受け取り方](https://github.com/atsushi0919/paiza_challenge/blob/main/stdin_gets.ipynb)
 
