@@ -14,4 +14,5 @@ IT／WEBエンジニアに特化した転職・就職・学習サイト[「paiza
 - ### [getsメソッドを使った色々な標準入力の受け取り方](https://github.com/atsushi0919/paiza_challenge/blob/main/stdin_gets.ipynb)
 
 ## その他
-- ### [paiza DPメニュー （動的計画法練習問題）](https://github.com/atsushi0919/paiza_dynamic_programming/blob/main/README.md)
+- ### [paiza DPメニュー （動的計画法練習問題）](https://github.com/atsushi0919/paiza_dynamic_programming)
+- ### [paiza クラス・構造体メニュー](https://github.com/atsushi0919/paiza_class)
